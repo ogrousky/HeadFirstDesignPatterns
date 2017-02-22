@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HeadFirstDesignPatterns
+namespace ObserverPattern
 {
-    public interface QuakBehavior
+    public interface IObserver
     {
-        string Quack();
+        void Update();
     }
 }

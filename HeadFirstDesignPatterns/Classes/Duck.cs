@@ -8,8 +8,8 @@ namespace HeadFirstDesignPatterns
 {
     public abstract class Duck
     {
-        public FlyBehavior flyBehavior;
-        public QuakBehavior quackBehavior;
+        public IFlyBehavior flyBehavior;
+        public IQuakBehavior quackBehavior;
 
         public void PerformQuack()
         {
@@ -27,12 +27,12 @@ namespace HeadFirstDesignPatterns
             System.Console.WriteLine("I can swim");
         }
 
-        public void SetQuackBehavior(QuakBehavior quack)
+        public void SetQuackBehavior(IQuakBehavior quack)
         {
             quackBehavior = quack;
         }
 
-        public void SetFlyBehavior(FlyBehavior fly)
+        public void SetFlyBehavior(IFlyBehavior fly)
         {
             flyBehavior = fly;
         }

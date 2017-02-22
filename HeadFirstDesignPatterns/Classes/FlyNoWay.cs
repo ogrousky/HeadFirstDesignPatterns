@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace HeadFirstDesignPatterns
 {
-    public class FlyWithWings : FlyBehavior
+    public class FlyNoWay : IFlyBehavior
     {
         public string Fly()
         {
-            return ("I fly with my wings");
+            return ("I can't Fly");
         }
     }
 }

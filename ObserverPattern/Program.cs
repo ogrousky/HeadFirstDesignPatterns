@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HeadFirstDesignPatterns
+namespace ObserverPattern
 {
-    public class FlyNoWay : FlyBehavior
+    class Program
     {
-        public string Fly()
+        static void Main(string[] args)
         {
-            return ("I can't Fly");
         }
     }
 }

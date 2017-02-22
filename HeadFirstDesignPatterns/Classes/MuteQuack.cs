@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace HeadFirstDesignPatterns
 {
-    public class Squeak:QuakBehavior    
+    public class MuteQuack: IQuakBehavior
     {
         public string Quack()
         {
-            return ("I Squeak");
+            return ("I can't Quack");
         }
     }
 }
